@@ -17,7 +17,9 @@
     body {
       background: #0b1020;
       color: white;
+      
     }
+    
 
     header {
       position: fixed;
@@ -179,6 +181,21 @@
       background: #070b16;
       color: #8892ad;
     }
+    img.hero-image {
+      width: 300px;
+      height: 300px;
+      border-radius: 50;
+      margin-top: 20px;
+      object-fit: cover;
+    position: absolute;
+    right: 1%;
+    top: px;
+
+    }
+    .container {
+      
+    }
+
 
     @media (max-width: 700px) {
       nav a {
@@ -193,99 +210,111 @@
       .hero h2 {
         font-size: 23px;
       }
+      
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <div class="logo">Mazen.</div>
 
-  <header>
-    <div class="logo">Mazen.</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <section class="hero" id="home">
+      <h1>Hi, I'm <span>Mazen</span></h1>            
+      <h2>Web Developer 🚀</h2>
+      <p>
+        Welcome to my personal portfolio.
+        I enjoy creating websites, learning programming,
+        and building cool projects.
+      </p>
+      <img src="./55f8dcf6-509b-4a24-a830-f4770dca006b.jfif" alt="Mazen" class="hero-image" >
+      <p>
 
-  <section class="hero" id="home">
-    <h1>Hi, I'm <span>Mazen</span></h1>
-    <h2>Web Developer 🚀</h2>
-    <p>
-      Welcome to my personal portfolio.
-      I enjoy creating websites, learning programming,
-      and building cool projects.
-    </p>
+      <a href="#projects" class="btn">View My Projects</a>
+    </section>
 
-    <a href="#projects" class="btn">View My Projects</a>
-  </section>
+        <section class="about" id="about">
+      <h2 class="title">About <span>Me</span></h2>
 
-      <section class="about" id="about">
-    <h2 class="title">About <span>Me</span></h2>
-<img src="./55f8dcf6-509b-4a24-a830-f4770dca006b.jfif" alt="Mazen" class="hero-image" >
-    <p>
-      I'm Mazen, a young developer who loves technology,
-      websites, programming, and learning new things.
-      This portfolio shows some of my skills and projects.
-    </p>
-  </section>
+        I'm Mazen, a young developer who loves technology,
+        websites, programming, and learning new things.
+        This portfolio shows some of my skills and projects.
+      </p>
+    </section>
 
-  <section id="skills">
-    <h2 class="title">My <span>Skills</span></h2>
+    <section id="skills">
+      <h2 class="title">My <span>Skills</span></h2>
 
-    <div class="skills">
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
-      <div class="skill">JavaScript</div>
-      <div class="skill">Web Design</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2 class="title">My <span>Projects</span></h2>
-
-    <div class="projects">
-
-      <div class="project">
-        <h3>Portfolio Website</h3>
-        <p>
-          A personal website made with HTML, CSS and JavaScript.
-        </p>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Web Design</div>
       </div>
+    </section>
 
-      <div class="project">
-        <h3>Game Project</h3>
-        <p>
-          A fun browser game created using JavaScript.
-        </p>
+    <section id="projects">
+      <h2 class="title">My <span>Projects</span></h2>
+
+      <div class="projects">
+        <div class="project">
+          <a href="https://mazen2016.github.io/scent-of-coffee/">
+          <h3>Scent of Coffee</h3>
+          <p>
+            A coffee shop website made with HTML, CSS and JavaScript.
+          </p>
+          </a>
+        </div>
+        <div class="project">
+          <h3>Portfolio Website</h3>
+          <p>
+            A personal website made with HTML, CSS and JavaScript.
+          </p>
+        </div>
+
+        <div class="project">
+          <a href="https://mazen2016.github.io/4.5-Enhanced-Even-or-Odd-Game-Project/">
+          <h3> Even or Odd Game</h3>
+          <p>
+            A fun browser game created using JavaScript.
+          </p>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Future Project</h3>
+          <p>
+            More awesome projects coming soon!
+          </p>
+        </div>
+
       </div>
+    </section>
 
-      <div class="project">
-        <h3>Future Project</h3>
-        <p>
-          More awesome projects coming soon!
-        </p>
-      </div>
+    <section class="contact" id="contact">
+      <h2 class="title">Contact <span>Me</span></h2>
 
-    </div>
-  </section>
+      <p>Thanks for visiting my portfolio! 👋</p>
 
-  <section class="contact" id="contact">
-    <h2 class="title">Contact <span>Me</span></h2>
+      <a href="mailto:your@email.com" class="btn">
+        Email Me
+      </a>
+    </section>
 
-    <p>Thanks for visiting my portfolio! 👋</p>
-
-    <a href="mailto:your@email.com" class="btn">
-      Email Me
-    </a>
-  </section>
-
-  <footer>
-    © 2026 Mazen. All Rights Reserved.
-  </footer>
+    <footer>
+      © 2026 Mazen. All Rights Reserved.
+    </footer>
+  </div>
 
   <script>
     // Simple scroll animation
